@@ -7,11 +7,11 @@ type Item struct {
 
 func UpdateQuality(items []*Item) {
 	for i := 0; i < len(items); i++ {
-		updateQuality(items[i])
+		UpdateItemQuality(items[i])
 	}
 }
 
-func updateQuality(item *Item) {
+func UpdateItemQuality(item *Item) {
 	if item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert" {
 		if item.Quality > 0 {
 			if item.Name != "Sulfuras, Hand of Ragnaros" {
